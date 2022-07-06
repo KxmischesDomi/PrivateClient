@@ -1,32 +1,31 @@
 {
-  "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+	"schemaVersion": 1,
+	"id": "kxmischesdomi",
+	"version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
-  "authors": [
-    "KxmischesDomi"
-  ],
-  "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
-  },
+	"name": "KxmischesDomi's Mod",
+	"description": "",
+	"authors": [
+		"KxmischesDomi"
+	],
+	"contact": {
+		"homepage": "https://kxmischesdomi.me/",
+		"sources": "https://github.com/KxmischesDomi/PrivateClient"
+	},
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+	"license": "CC0-1.0",
+	"icon": "assets/kxmischesdomi/icon.png",
 
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "de.kxmischesdomi.modid.ExampleMod"
-    ]
-  },
-  "mixins": [
-    "modid.mixins.json"
-  ],
+	"entrypoints": {
+		"client": [
+			"de.kxmischesdomi.kxmischesdomi.KxmischesDomiMod"
+		]
+	},
+	"mixins": [
+		"kxmischesdomi.mixins.json"
+	],
 
-  "depends": {
-    "minecraft": "1.19.x"
-  }
+	"depends": {
+		"minecraft": "1.19.x"
+	}
 }

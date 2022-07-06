@@ -1,0 +1,23 @@
+{
+
+	"client.info": "KxmischesDomi's Client",
+
+	"category.kxmischesdomi": "KxmischesDomi",
+	"category.modules": "Modules",
+	"key.kxmischesdomi.main_menu":  "Open Main Menu",
+
+	"tab.client": "Client",
+	"tab.player": "Player",
+	"tab.world": "World",
+	"tab.smp": "SMP",
+
+	"module.overlay": "Overlay",
+	"module.reset_tabs": "Reset Tabs",
+	"module.reset_modules": "Reset Modules",
+	"module.vanilla_fly": "Vanilla Fly",
+	"module.damage_leave": "Damage Quit",
+	"module.totem_restock": "Totem Restock",
+	"module.raid_clock": "Raid Clock",
+	"module.tnt_timer": "TNT Timer",
+	"module.creeper_timer": "Creeper Timer"
+}
