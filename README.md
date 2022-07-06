@@ -1,9 +1,10 @@
-# Fabric Example Mod
+# Private Client
 
-## Setup
+![](https://media.discordapp.net/attachments/966697094318551122/994349743306186862/unknown.png?width=1276&height=676)
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+## TODO
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+- No Scoreboard
+- No Effect GUI
+- Auto Jump
+- Auto Reconnect
