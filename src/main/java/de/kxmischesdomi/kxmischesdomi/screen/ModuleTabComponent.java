@@ -35,10 +35,10 @@ public class ModuleTabComponent extends AbstractWidget {
 		if (modules != null) {
 			this.modules = ImmutableList.copyOf(modules);
 		} else {
-			modules = Collections.emptyList();
+			this.modules = Collections.emptyList();
 		}
 
-		this.height = modules.size() * moduleHeight + moduleHeight;
+		this.height = this.modules.size() * moduleHeight + moduleHeight;
 
 	}
 
@@ -58,18 +58,16 @@ public class ModuleTabComponent extends AbstractWidget {
 			index++;
 			int offsetY = index * moduleHeight;
 
-			int color = 0xFF364760;
-			if (module.isEnabled()) {
-				color = 0xFF0798FC;
-			}
-
-			fill(poseStack, this.x, this.y + offsetY, this.x + this.width, this.y + offsetY + moduleHeight, color);
+			fill(poseStack, this.x, this.y + offsetY, this.x + this.width, this.y + offsetY + moduleHeight, module.getBackgroundColor());
 
 			poseStack.pushPose();
 
-			float scale = 0.65f;
+			int textWidth = font.width(module.getTitle());
+
+			float s = (float) (this.width - 5) / textWidth;
+			float scale = Math.min(0.65f, s);
 			poseStack.scale(scale, scale, 1);
-			poseStack.translate((this.x + width / 2) / scale, (this.y + offsetY + moduleHeight / 2 - font.lineHeight / 4) / scale, 0);
+			poseStack.translate((this.x + this.width / 2f) / scale, (this.y + offsetY + moduleHeight / 2f - font.lineHeight / 4f) / scale, 0);
 			drawCenteredString(poseStack, font, module.getTitle(), 0, 0, 0xFFFFFFFF);
 
 			poseStack.popPose();

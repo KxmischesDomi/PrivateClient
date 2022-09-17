@@ -1,23 +1,44 @@
 {
 
-	"client.info": "KxmischesDomi's Client",
+	"client.info": "Domi's Legit Client",
 
-	"category.kxmischesdomi": "KxmischesDomi",
+	"category.kxmischesdomi": "Legit Client",
 	"category.modules": "Modules",
 	"key.kxmischesdomi.main_menu":  "Open Main Menu",
 
 	"tab.client": "Client",
+	"tab.gui": "GUI",
 	"tab.player": "Player",
 	"tab.world": "World",
 	"tab.smp": "SMP",
 
-	"module.overlay": "Overlay",
-	"module.reset_tabs": "Reset Tabs",
+	"module.no_effect_particles": "No Effect Particles",
+	"module.deadmau5_ears": "Deadmau5 Ears",
+	"module.jeb_everything": "Jeb Everything",
+	"module.dinnerbone_everything": "Dinnerbone Everything",
+	"module.auto_reconnect": "Auto Reconnect",
 	"module.reset_modules": "Reset Modules",
+
+	"module.overlay": "Overlay",
+	"module.reconnect_button": "Reconnect Button",
+	"module.hardcore_hearts": "Hardcore Hearts",
+	"module.no_scoreboard": "No Scoreboard",
+	"module.no_effect_overlay": "No Effect Overlay",
+	"module.reset_tabs": "Reset Tabs",
+
 	"module.vanilla_fly": "Vanilla Fly",
+	"module.auto_run": "Auto Run",
+	"module.auto_jump": "Auto Jump",
 	"module.damage_leave": "Damage Quit",
 	"module.totem_restock": "Totem Restock",
-	"module.raid_clock": "Raid Clock",
+
+	"module.nuker": "Nuker",
 	"module.tnt_timer": "TNT Timer",
-	"module.creeper_timer": "Creeper Timer"
+	"module.creeper_timer": "Creeper Timer",
+
+	"module.raid_clock": "Raid Clock",
+
+
+	"gui.reconnect": "Reconnect (%s)"
+
 }

@@ -3,7 +3,7 @@ package de.kxmischesdomi.kxmischesdomi.rendering;
 import com.mojang.blaze3d.vertex.PoseStack;
 import de.kxmischesdomi.kxmischesdomi.KxmischesDomiMod;
 import de.kxmischesdomi.kxmischesdomi.module.types.IModule;
-import de.kxmischesdomi.kxmischesdomi.module.modules.OverlayModule;
+import de.kxmischesdomi.kxmischesdomi.module.modules.gui.OverlayModule;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -39,7 +39,7 @@ public class GuiOverlayRenderer {
 		int i = 0;
 		for (IModule module : KxmischesDomiMod.getInstance().getModuleWrapper().getModules()) {
 
-			if (module.getClass().equals(OverlayModule.class)) continue;
+			if (!module.inOverlay()) continue;
 
 			if (module.isEnabled()) {
 				i++;

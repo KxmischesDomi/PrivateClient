@@ -1,4 +1,4 @@
-package de.kxmischesdomi.kxmischesdomi.module.modules;
+package de.kxmischesdomi.kxmischesdomi.module.modules.player;
 
 import de.kxmischesdomi.kxmischesdomi.module.types.AbstractModule;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;

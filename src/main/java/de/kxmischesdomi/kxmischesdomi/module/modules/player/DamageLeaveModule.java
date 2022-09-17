@@ -1,4 +1,4 @@
-package de.kxmischesdomi.kxmischesdomi.module.modules;
+package de.kxmischesdomi.kxmischesdomi.module.modules.player;
 
 import com.mojang.realmsclient.RealmsMainScreen;
 import de.kxmischesdomi.kxmischesdomi.module.types.AbstractModule;
@@ -24,6 +24,7 @@ public class DamageLeaveModule extends AbstractModule {
 				if (Minecraft.getInstance().player != null) {
 					if (health != -1 && health > Minecraft.getInstance().player.getHealth()) {
 						quit();
+						health = -1;
 					} else {
 						health = Minecraft.getInstance().player.getHealth();
 					}

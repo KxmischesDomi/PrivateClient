@@ -14,17 +14,19 @@ public interface IModule {
 	Component getTitle();
 
 	Component getOverlayTitle();
+	boolean inOverlay();
 
 	boolean isEnabled();
+	boolean getDefaultValue();
+	int getBackgroundColor();
 
 	void setEnabled(boolean enabled);
-
-	boolean getDefaultValue();
 
 	void onEnable();
 	void onDisable();
 
 	void loadCustomData(JsonObject object);
 	void writeCustomData(JsonObject object);
+
 
 }

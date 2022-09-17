@@ -40,6 +40,16 @@ public abstract class AbstractModule implements IModule {
 	}
 
 	@Override
+	public int getBackgroundColor() {
+		return isEnabled() ? 0xFF0798FC : 0xFF364760;
+	}
+
+	@Override
+	public boolean inOverlay() {
+		return true;
+	}
+
+	@Override
 	public boolean getDefaultValue() {
 		return defaultValue;
 	}

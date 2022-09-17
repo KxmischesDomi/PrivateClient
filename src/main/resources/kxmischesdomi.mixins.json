@@ -3,15 +3,22 @@
 	"minVersion": "0.8",
 	"package": "de.kxmischesdomi.kxmischesdomi.mixin",
 	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-		"MinecraftMixin"
-	],
+	"mixins": [],
 	"client": [
+		"client.DisconnectedScreenMixin",
+		"client.LivingEntityRendererMixin",
+		"jeb.PlayerRendererMixin",
 		"ClientPacketListenerMixin",
-		"CreeperAccessor",
-		"GuiMixin",
-		"LevelRendererMixin",
-		"TitleScreenMixin"
+		"MinecraftMixin",
+		"TitleScreenMixin",
+		"auto.KeyboardInputMixin",
+		"client.Deadmau5EarsLayerMixin",
+		"client.GuiMixin",
+		"client.LivingEntityMixin",
+		"jeb.LivingEntityRendererMixin",
+		"jeb.RenderLayerMixin",
+		"timer.CreeperAccessor",
+		"timer.LevelRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -1,14 +1,13 @@
 package de.kxmischesdomi.kxmischesdomi.rendering;
 
 import com.google.common.collect.Iterables;
-import com.mojang.authlib.minecraft.client.MinecraftClient;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Matrix4f;
 import com.mojang.math.Quaternion;
 import de.kxmischesdomi.kxmischesdomi.KxmischesDomiMod;
-import de.kxmischesdomi.kxmischesdomi.mixin.CreeperAccessor;
-import de.kxmischesdomi.kxmischesdomi.module.modules.CreeperTimerModule;
-import de.kxmischesdomi.kxmischesdomi.module.modules.TNTTimerModule;
+import de.kxmischesdomi.kxmischesdomi.mixin.timer.CreeperAccessor;
+import de.kxmischesdomi.kxmischesdomi.module.modules.world.CreeperTimerModule;
+import de.kxmischesdomi.kxmischesdomi.module.modules.world.TNTTimerModule;
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;

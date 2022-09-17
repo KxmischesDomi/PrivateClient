@@ -1,4 +1,4 @@
-package de.kxmischesdomi.kxmischesdomi.mixin;
+package de.kxmischesdomi.kxmischesdomi.mixin.timer;
 
 import net.minecraft.world.entity.monster.Creeper;
 import org.spongepowered.asm.mixin.Mixin;

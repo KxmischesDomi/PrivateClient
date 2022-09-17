@@ -7,6 +7,7 @@ package de.kxmischesdomi.kxmischesdomi.module;
 public enum ModuleTab {
 
 	CLIENT,
+	GUI,
 	PLAYER,
 	WORLD,
 	SMP;

@@ -4,7 +4,4 @@
 
 ## TODO
 
-- No Scoreboard
-- No Effect GUI
-- Auto Jump
 - Auto Reconnect

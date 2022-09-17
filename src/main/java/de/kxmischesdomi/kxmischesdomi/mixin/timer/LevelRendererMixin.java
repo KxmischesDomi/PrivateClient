@@ -1,4 +1,4 @@
-package de.kxmischesdomi.kxmischesdomi.mixin;
+package de.kxmischesdomi.kxmischesdomi.mixin.timer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Matrix4f;
