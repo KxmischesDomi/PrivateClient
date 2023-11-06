@@ -10,7 +10,8 @@ public enum ModuleTab {
 	GUI,
 	PLAYER,
 	WORLD,
-	SMP;
+	FUN,
+	SPECIAL;
 
 	public int x, y, focusIndex;
 

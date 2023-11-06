@@ -17,10 +17,8 @@ public class ModuleLoader {
 	public void init() {
 
 		addModule(ModuleTab.CLIENT, new AutoReconnectModule());
-		addModule(ModuleTab.CLIENT, new Deadmau5EarsModule());
-		addModule(ModuleTab.CLIENT, new JebEverythingModule());
-		addModule(ModuleTab.CLIENT, new DinnerboneEverythingModule());
 		addModule(ModuleTab.CLIENT, new NoEffectParticlesModule());
+		addModule(ModuleTab.CLIENT, new FireOverlayModule());
 		addModule(ModuleTab.CLIENT, new ResetModulesModule());
 
 		addModule(ModuleTab.GUI, new OverlayModule());
@@ -40,7 +38,11 @@ public class ModuleLoader {
 		addModule(ModuleTab.WORLD, new TNTTimerModule());
 		addModule(ModuleTab.WORLD, new CreeperTimerModule());
 
-		addModule(ModuleTab.SMP, new RaidClockModule());
+		addModule(ModuleTab.FUN, new Deadmau5EarsModule());
+		addModule(ModuleTab.FUN, new JebEverythingModule());
+		addModule(ModuleTab.FUN, new DinnerboneEverythingModule());
+
+		addModule(ModuleTab.SPECIAL, new RaidClockModule());
 	}
 
 	private void addModule(ModuleTab tab, IModule module) {

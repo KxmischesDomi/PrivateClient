@@ -10,8 +10,10 @@
 	"tab.gui": "GUI",
 	"tab.player": "Player",
 	"tab.world": "World",
-	"tab.smp": "SMP",
+	"tab.fun": "Fun",
+	"tab.special": "Special",
 
+	"module.fire_overlay": "Fire Overlay",
 	"module.no_effect_particles": "No Effect Particles",
 	"module.deadmau5_ears": "Deadmau5 Ears",
 	"module.jeb_everything": "Jeb Everything",
@@ -32,7 +34,7 @@
 	"module.damage_leave": "Damage Quit",
 	"module.totem_restock": "Totem Restock",
 
-	"module.nuker": "Nuker",
+	"module.nuker": "Creative Nuker",
 	"module.tnt_timer": "TNT Timer",
 	"module.creeper_timer": "Creeper Timer",
 
