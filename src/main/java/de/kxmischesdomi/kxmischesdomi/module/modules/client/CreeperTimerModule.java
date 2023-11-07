@@ -1,4 +1,4 @@
-package de.kxmischesdomi.kxmischesdomi.module.modules.world;
+package de.kxmischesdomi.kxmischesdomi.module.modules.client;
 
 import de.kxmischesdomi.kxmischesdomi.module.types.AbstractModule;
 

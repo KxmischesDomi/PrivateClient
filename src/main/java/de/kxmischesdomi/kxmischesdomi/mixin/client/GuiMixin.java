@@ -3,10 +3,12 @@ package de.kxmischesdomi.kxmischesdomi.mixin.client;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import de.kxmischesdomi.kxmischesdomi.KxmischesDomiMod;
-import de.kxmischesdomi.kxmischesdomi.module.modules.client.FireOverlayModule;
+import de.kxmischesdomi.kxmischesdomi.module.modules.client.FullBrightModule;
+import de.kxmischesdomi.kxmischesdomi.module.modules.gui.FireOverlayModule;
 import de.kxmischesdomi.kxmischesdomi.module.modules.gui.HardcoreHeartsModule;
 import de.kxmischesdomi.kxmischesdomi.module.modules.gui.NoEffectOverlayModule;
 import de.kxmischesdomi.kxmischesdomi.module.modules.gui.NoScoreboardModule;
+import de.kxmischesdomi.kxmischesdomi.rendering.CoordinateOverlayRenderer;
 import de.kxmischesdomi.kxmischesdomi.rendering.GuiOverlayRenderer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
@@ -14,8 +16,6 @@ import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiComponent;
 import net.minecraft.client.renderer.entity.ItemRenderer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.storage.LevelData;
 import net.minecraft.world.scores.Objective;
 import org.spongepowered.asm.mixin.Final;
@@ -46,6 +46,11 @@ public abstract class GuiMixin {
 	@Inject(method = "render", at = @At("TAIL"))
 	public void renderMixin(PoseStack poseStack, float f, CallbackInfo ci) {
 		GuiOverlayRenderer.renderGuiOverlay((Gui) (Object) this, poseStack, f);
+		CoordinateOverlayRenderer.renderCoordinateOverlay((Gui) (Object) this, poseStack, screenWidth);
+
+		if (KxmischesDomiMod.getInstance().getModuleWrapper().isModuleEnabled(FullBrightModule.class)) {
+		} else {
+		}
 	}
 
 	@Inject(method = "renderCrosshair", at = @At("TAIL"))
@@ -53,7 +58,6 @@ public abstract class GuiMixin {
 		if (KxmischesDomiMod.getInstance().getModuleWrapper().isModuleEnabled(FireOverlayModule.class) && minecraft.player.isOnFire()) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("textures/particle/flame.png"));;
 			GuiComponent.blit(poseStack, (this.screenWidth - 8) / 2, (this.screenHeight - 30) / 2, 0f, 0f, 8, 8, 8, 8);
-//			Gui.drawCenteredString(poseStack, getFont(), "on fire", (this.screenWidth - 15) / 2, (this.screenHeight - 15) / 2, 0xFFFFFF);
 		}
 	}
 

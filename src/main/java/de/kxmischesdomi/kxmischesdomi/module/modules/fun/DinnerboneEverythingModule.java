@@ -1,4 +1,4 @@
-package de.kxmischesdomi.kxmischesdomi.module.modules.client;
+package de.kxmischesdomi.kxmischesdomi.module.modules.fun;
 
 import de.kxmischesdomi.kxmischesdomi.module.types.AbstractModule;
 
@@ -6,11 +6,11 @@ import de.kxmischesdomi.kxmischesdomi.module.types.AbstractModule;
  * @author KxmischesDomi | https://github.com/kxmischesdomi
  * @since 1.0
  */
-public class JebEverythingModule extends AbstractModule {
+public class DinnerboneEverythingModule extends AbstractModule {
 
 	@Override
 	public String getName() {
-		return "jeb_everything";
+		return "dinnerbone_everything";
 	}
 
 }

@@ -1,4 +1,4 @@
-package de.kxmischesdomi.kxmischesdomi.module.modules.client;
+package de.kxmischesdomi.kxmischesdomi.module.modules.settings;
 
 import com.google.gson.JsonObject;
 import de.kxmischesdomi.kxmischesdomi.KxmischesDomiMod;
@@ -12,6 +12,11 @@ import de.kxmischesdomi.kxmischesdomi.module.types.OneTimeModule;
  * @since 1.0
  */
 public class ResetModulesModule extends OneTimeModule {
+
+	@Override
+	public int getBackgroundColor() {
+		return 0xFFbf0000;
+	}
 
 	@Override
 	public String getName() {

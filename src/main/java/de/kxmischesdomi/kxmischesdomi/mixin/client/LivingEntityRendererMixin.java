@@ -1,8 +1,7 @@
 package de.kxmischesdomi.kxmischesdomi.mixin.client;
 
 import de.kxmischesdomi.kxmischesdomi.KxmischesDomiMod;
-import de.kxmischesdomi.kxmischesdomi.module.modules.client.Deadmau5EarsModule;
-import de.kxmischesdomi.kxmischesdomi.module.modules.client.DinnerboneEverythingModule;
+import de.kxmischesdomi.kxmischesdomi.module.modules.fun.DinnerboneEverythingModule;
 import net.minecraft.client.renderer.entity.LivingEntityRenderer;
 import net.minecraft.world.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Mixin;

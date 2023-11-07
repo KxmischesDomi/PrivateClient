@@ -1,7 +1,7 @@
 package de.kxmischesdomi.kxmischesdomi.mixin.client;
 
 import de.kxmischesdomi.kxmischesdomi.KxmischesDomiMod;
-import de.kxmischesdomi.kxmischesdomi.module.modules.client.Deadmau5EarsModule;
+import de.kxmischesdomi.kxmischesdomi.module.modules.fun.Deadmau5EarsModule;
 import net.minecraft.client.renderer.entity.layers.Deadmau5EarsLayer;
 import net.minecraft.network.chat.Component;
 import org.spongepowered.asm.mixin.Mixin;

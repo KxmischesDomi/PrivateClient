@@ -1,4 +1,4 @@
-package de.kxmischesdomi.kxmischesdomi.module.modules.world;
+package de.kxmischesdomi.kxmischesdomi.module.modules.fun;
 
 import de.kxmischesdomi.kxmischesdomi.module.types.AbstractModule;
 
@@ -6,11 +6,11 @@ import de.kxmischesdomi.kxmischesdomi.module.types.AbstractModule;
  * @author KxmischesDomi | https://github.com/kxmischesdomi
  * @since 1.0
  */
-public class TNTTimerModule extends AbstractModule {
+public class JebEverythingModule extends AbstractModule {
 
 	@Override
 	public String getName() {
-		return "tnt_timer";
+		return "jeb_everything";
 	}
 
 }

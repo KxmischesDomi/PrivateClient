@@ -6,10 +6,12 @@ package de.kxmischesdomi.kxmischesdomi.module;
  */
 public enum ModuleTab {
 
+	SETTINGS,
+
 	CLIENT,
 	GUI,
 	PLAYER,
-	WORLD,
+//	WORLD,
 	FUN,
 	SPECIAL;
 
@@ -20,7 +22,7 @@ public enum ModuleTab {
 		int i = 0;
 		for (ModuleTab value : ModuleTab.values()) {
 			value.focusIndex = i;
-			value.x = 100 + i * 70;
+			value.x = 40 + i * 70;
 			value.y = 10;
 			i++;
 		}

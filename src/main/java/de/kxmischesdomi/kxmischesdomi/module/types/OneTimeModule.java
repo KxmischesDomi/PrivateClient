@@ -23,11 +23,6 @@ public abstract class OneTimeModule extends AbstractModule {
 	}
 
 	@Override
-	public int getBackgroundColor() {
-		return 0xFFbf0000;
-	}
-
-	@Override
 	public void writeCustomData(JsonObject object) {
 
 	}

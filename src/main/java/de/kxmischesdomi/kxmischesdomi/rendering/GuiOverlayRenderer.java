@@ -28,7 +28,7 @@ public class GuiOverlayRenderer {
 		MutableComponent component = Component.translatable("client.info");
 		int textWidth = gui.getFont().width(component);
 
-		int widthPadding = 5;
+		int widthPadding = 5 * 2;
 		int width = textWidth + widthPadding;
 		int height = 10;
 		Gui.fill(poseStack, 0, 0, width, height, 0x762A394F);

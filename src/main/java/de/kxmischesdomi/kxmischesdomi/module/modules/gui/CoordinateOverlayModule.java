@@ -1,4 +1,4 @@
-package de.kxmischesdomi.kxmischesdomi.module.modules.client;
+package de.kxmischesdomi.kxmischesdomi.module.modules.gui;
 
 import de.kxmischesdomi.kxmischesdomi.module.types.AbstractModule;
 
@@ -6,10 +6,10 @@ import de.kxmischesdomi.kxmischesdomi.module.types.AbstractModule;
  * @author KxmischesDomi | https://github.com/kxmischesdomi
  * @since 1.0
  */
-public class FireOverlayModule extends AbstractModule {
+public class CoordinateOverlayModule extends AbstractModule {
 
     @Override
     public String getName() {
-        return "fire_overlay";
+        return "coordinate_overlay";
     }
 }

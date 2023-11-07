@@ -1,4 +1,4 @@
-package de.kxmischesdomi.kxmischesdomi.module.modules.smp;
+package de.kxmischesdomi.kxmischesdomi.module.modules.special;
 
 import de.kxmischesdomi.kxmischesdomi.module.types.AbstractModule;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;

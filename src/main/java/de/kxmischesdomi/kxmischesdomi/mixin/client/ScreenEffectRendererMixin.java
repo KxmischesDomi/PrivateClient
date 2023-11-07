@@ -2,7 +2,7 @@ package de.kxmischesdomi.kxmischesdomi.mixin.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import de.kxmischesdomi.kxmischesdomi.KxmischesDomiMod;
-import de.kxmischesdomi.kxmischesdomi.module.modules.client.FireOverlayModule;
+import de.kxmischesdomi.kxmischesdomi.module.modules.gui.FireOverlayModule;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ScreenEffectRenderer;
 import org.spongepowered.asm.mixin.Mixin;
